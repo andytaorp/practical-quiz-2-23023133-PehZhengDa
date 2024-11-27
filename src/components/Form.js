@@ -19,6 +19,7 @@ export default function Form({ onAddTask }) {
       <h3>New Task</h3>
       <input
         type="text"
+        placeholder="New Task"
         value={description}
         onChange={(e) => setDescription(e.target.value)} // Update state on input change
         required
