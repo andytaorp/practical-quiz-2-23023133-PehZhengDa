@@ -16,7 +16,7 @@ export default function Form({ onAddTask }) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h3>What are the tasks?</h3>
+      <h3>New Task</h3>
       <input
         type="text"
         placeholder="Enter task description"
@@ -24,7 +24,7 @@ export default function Form({ onAddTask }) {
         onChange={(e) => setDescription(e.target.value)} // Update state on input change
         required
       />
-      <button type="submit">SUBMIT</button>
+      <button type="submit">Add Task</button>
     </form>
   );
 }

@@ -17,12 +17,10 @@ function App() {
     );
   };
   
-
   const handleDeleteTask = (id) => {
     setTasks((prevTasks) => prevTasks.filter((task) => task.id !== id));
   };
 
-  
   return (
     <div className="app">
       <h1>Task Tracker</h1>
